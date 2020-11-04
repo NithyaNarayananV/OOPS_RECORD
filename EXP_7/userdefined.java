@@ -1,15 +1,10 @@
 /*
 EX NO : 7	PROGRAM TO IMPLEMENT USER DEFINED EXCEPTION HANDLING
 
-
 AIM
-
 To write a java program to implement user defined exception handling
 
-
-
 PROCEDURE
-
 1.Create  a class which extends Exception class.
 2.Create a constructor which receives the string as argument.
 3.Get the Amount as input from the user.
@@ -18,17 +13,7 @@ PROCEDURE
    construct.
 6.After the exception is handled , the string “invalid amount “ will be displayed.
 7.If the amount is greater than 0 , the message “Amount Deposited “ will be displayed 
-
-
-
-
-
-
-
-
 */
-
-
 
 
 import java.util.Scanner;
@@ -65,34 +50,3 @@ public class userdefined
         }
     }
 }
-/*/
-
-class MyException extends Exception
-{
-    String str1;
-    MyException(String str2)
-    {
-        str1=str2;
-    }
-    public String toString()
-    { 
-        return ("MyException Occurred: "+str1) ;
-    }
-}
-class userdefined
-{
-    public static void main(String args[])
-    {
-        try 
-        {
-            System.out.println("Starting of try block");
-            throw new MyException("This is My error Message"); 
-        }
-        catch(MyException exp)
-        {
-            System.out.println("Catch Block") ;
-            System.out.println(exp) ;
-        }
-    }
-}
-*/
